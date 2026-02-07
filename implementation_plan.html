@@ -402,7 +402,8 @@
                     <li><strong>100% AWS-Native</strong> - All 11+ services from AWS ecosystem</li>
                     <li><strong>Visual Demo-Ready</strong> - Step Functions provides beautiful workflow diagrams</li>
                     <li><strong>Production-Grade</strong> - Serverless, auto-scaling, enterprise-ready</li>
-                    <li><strong>Ultra Cost-Optimized</strong> - Start at just $61-65/month (₹5,533-5,896) for MVP</li>
+                    <li><strong>Ultra Cost-Optimized</strong> - Start at just $26-32/month (₹2,358-2,902) for demo phase
+                    </li>
                     <li><strong>AI-First</strong> - AWS Bedrock Claude 3.5 Sonnet for intelligent agents</li>
                 </ul>
             </div>
@@ -834,8 +835,71 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <tr style="background: rgba(255, 149, 0, 0.2);">
+                        <td colspan="3"><strong>🎯 DEMO/HACKATHON TIER (10-15 Users)</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>AWS Bedrock</strong> (Claude 3 Haiku - Batch API + Caching)</td>
+                        <td>5K queries (~2M tokens, 60% cache hit)</td>
+                        <td>$10-12 (₹907-1,088)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AWS Textract</strong></td>
+                        <td>500 pages/month</td>
+                        <td>$0.75 (₹68)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AWS Lambda</strong></td>
+                        <td>30K invocations</td>
+                        <td>FREE (within 1M free tier)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AWS Step Functions</strong></td>
+                        <td>5K state transitions</td>
+                        <td>$0.12 (₹11)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AWS EC2</strong> (Spot t3.medium + pre-rendered templates)</td>
+                        <td>10 hours rendering</td>
+                        <td>$0.10-0.50 (₹9-45)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AWS S3</strong></td>
+                        <td>10GB videos (compressed)</td>
+                        <td>$0.23 (₹21)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AWS CloudFront</strong></td>
+                        <td>50GB transfer (aggressive caching)</td>
+                        <td>$4.25 (₹386)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AWS DynamoDB</strong></td>
+                        <td>3GB storage</td>
+                        <td>FREE (within 25GB free tier)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AWS Amplify</strong></td>
+                        <td>Hosting + CI/CD</td>
+                        <td>$11 (₹997)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AWS API Gateway</strong></td>
+                        <td>5K requests</td>
+                        <td>FREE (within 1M free tier)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AWS CloudWatch</strong></td>
+                        <td>Basic logs & metrics</td>
+                        <td>FREE (within free tier)</td>
+                    </tr>
+                    <tr class="cost-total" style="background: rgba(255, 149, 0, 0.15);">
+                        <td colspan="2"><strong>🏆 DEMO TOTAL (Best for Hackathon)</strong></td>
+                        <td>$26-32/month (₹2,358-2,902/month)</td>
+                    </tr>
+
                     <tr style="background: rgba(102, 126, 234, 0.2);">
-                        <td colspan="3"><strong>🎯 CONSERVATIVE ESTIMATE (20-30 Active Users)</strong></td>
+                        <td colspan="3"><strong>💡 MVP TIER (20-30 Active Users)</strong></td>
                     </tr>
                     <tr>
                         <td><strong>AWS Bedrock</strong> (Claude 3.5 Sonnet - Batch API)</td>
@@ -898,7 +962,7 @@
                     </tr>
 
                     <tr style="background: rgba(102, 126, 234, 0.2);">
-                        <td colspan="3"><strong>📈 SCALED ESTIMATE (100 Active Users)</strong></td>
+                        <td colspan="3"><strong>📈 SCALED TIER (100 Active Users)</strong></td>
                     </tr>
                     <tr>
                         <td><strong>AWS Bedrock</strong> (Batch mode - 50% cheaper)</td>
@@ -965,10 +1029,13 @@
             <div class="warning" style="margin-top: 2rem;">
                 <h3 style="margin-top: 0;">💡 Cost Optimization Strategies</h3>
                 <ul class="feature-list">
-                    <li><strong>Bedrock Batch API</strong> - 50% savings vs on-demand ($1.50/M input, $7.50/M output)
+                    <li><strong>Claude 3 Haiku for Demo</strong> - 83% cheaper than Sonnet ($0.25/M vs $1.50/M input)
                     </li>
-                    <li><strong>Aggressive Caching</strong> - Cache common queries, videos, OCR results (30-40%
+                    <li><strong>Pre-rendered Templates</strong> - 95% reduction in EC2 costs, render common explanations
+                        once</li>
+                    <li><strong>Aggressive Caching</strong> - 60% cache hit rate on Bedrock, videos, OCR (30-40% total
                         reduction)</li>
+                    <li><strong>Bedrock Batch API</strong> - 50% savings vs on-demand for MVP/Scaled tiers</li>
                     <li><strong>Removed AWS Kendra</strong> - Replaced with DynamoDB semantic search (saves ~$800/month)
                     </li>
                     <li><strong>EC2 Spot Instances</strong> - 70% cheaper than on-demand for video rendering</li>
@@ -979,8 +1046,8 @@
 
             <div class="highlight">
                 <strong>🎁 Hackathon Benefit:</strong> AWS typically provides $1000+ in credits for hackathon
-                participants, which covers <strong>15+ months of MVP operation</strong> or <strong>6+ months at
-                    scale</strong>!
+                participants, which covers <strong>31+ months of Demo operation</strong>, <strong>15+ months at
+                    MVP</strong>, or <strong>6+ months at scale</strong>!
             </div>
         </div>
 

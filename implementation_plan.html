@@ -399,10 +399,10 @@
             <h3>🎯 Key Hackathon Advantages</h3>
             <div class="highlight">
                 <ul class="feature-list">
-                    <li><strong>100% AWS-Native</strong> - All 12+ services from AWS ecosystem</li>
+                    <li><strong>100% AWS-Native</strong> - All 11+ services from AWS ecosystem</li>
                     <li><strong>Visual Demo-Ready</strong> - Step Functions provides beautiful workflow diagrams</li>
                     <li><strong>Production-Grade</strong> - Serverless, auto-scaling, enterprise-ready</li>
-                    <li><strong>Cost-Optimized</strong> - 40% cheaper than alternatives ($150-240/month vs $300+)</li>
+                    <li><strong>Ultra Cost-Optimized</strong> - Start at just $61-65/month (₹5,533-5,896) for MVP</li>
                     <li><strong>AI-First</strong> - AWS Bedrock Claude 3.5 Sonnet for intelligent agents</li>
                 </ul>
             </div>
@@ -433,7 +433,6 @@
                     subgraph "AI/ML Services"
                     Bedrock[AWS Bedrock<br />Claude 3.5 Sonnet]
                     Textract[AWS Textract<br />OCR Engine]
-                    Kendra[AWS Kendra<br />Intelligent Search]
                     end
 
                     subgraph "Compute Layer"
@@ -464,7 +463,6 @@
 
                     LambdaAgents --> Bedrock
                     LambdaAgents --> Textract
-                    LambdaAgents --> Kendra
                     LambdaAgents --> DynamoDB
 
                     StepFunc --> EC2Spot
@@ -519,7 +517,7 @@
                     end
 
                     subgraph "Module 2: Depth Tools"
-                    Citation[Citation Researcher<br />Lambda + Kendra]
+                    Citation[Citation Researcher<br />Lambda + DynamoDB]
                     Mindmap[Mindmap Generator<br />Bedrock + D3.js]
                     CodeAgent[Code Testing<br />Lambda Sandbox]
                     WebAgent[Web Search<br />Lambda + Bedrock]
@@ -805,11 +803,6 @@
                     <small>Spot Instances</small>
                 </div>
                 <div class="aws-service">
-                    <div class="aws-service-icon">🔍</div>
-                    <div class="aws-service-name">Kendra</div>
-                    <small>Intelligent Search</small>
-                </div>
-                <div class="aws-service">
                     <div class="aws-service-icon">🚀</div>
                     <div class="aws-service-name">Amplify</div>
                     <small>Frontend Hosting</small>
@@ -829,7 +822,9 @@
 
         <!-- Cost Analysis -->
         <div class="card">
-            <h2>💰 Cost Estimation (100 Active Users)</h2>
+            <h2>💰 Optimized Cost Estimation</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 1rem;">Exchange Rate: <strong>1 USD = ₹90.70
+                    INR</strong> (February 2026)</p>
             <table class="cost-table">
                 <thead>
                     <tr>
@@ -839,71 +834,153 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <tr style="background: rgba(102, 126, 234, 0.2);">
+                        <td colspan="3"><strong>🎯 CONSERVATIVE ESTIMATE (20-30 Active Users)</strong></td>
+                    </tr>
                     <tr>
-                        <td><strong>AWS Bedrock</strong> (Claude 3.5 Sonnet)</td>
-                        <td>30K queries (~15M tokens)</td>
-                        <td>$120-150</td>
+                        <td><strong>AWS Bedrock</strong> (Claude 3.5 Sonnet - Batch API)</td>
+                        <td>10K queries (~5M tokens)</td>
+                        <td>$25-35 (₹2,268-3,175)</td>
                     </tr>
                     <tr>
                         <td><strong>AWS Textract</strong></td>
-                        <td>3K pages/month</td>
-                        <td>$4.50</td>
+                        <td>1K pages/month</td>
+                        <td>$1.50 (₹136)</td>
                     </tr>
                     <tr>
                         <td><strong>AWS Lambda</strong></td>
-                        <td>100K invocations</td>
-                        <td>Free tier (1M free)</td>
+                        <td>50K invocations</td>
+                        <td>FREE (within 1M free tier)</td>
                     </tr>
                     <tr>
                         <td><strong>AWS Step Functions</strong></td>
-                        <td>30K state transitions</td>
-                        <td>$0.75</td>
+                        <td>10K state transitions</td>
+                        <td>$0.25 (₹23)</td>
                     </tr>
                     <tr>
                         <td><strong>AWS EC2</strong> (Spot g4dn.xlarge)</td>
-                        <td>50 hours rendering</td>
-                        <td>$15-25</td>
+                        <td>20 hours rendering</td>
+                        <td>$6-10 (₹544-907)</td>
                     </tr>
                     <tr>
                         <td><strong>AWS S3</strong></td>
-                        <td>100GB videos</td>
-                        <td>$2.30</td>
+                        <td>30GB videos</td>
+                        <td>$0.70 (₹63)</td>
                     </tr>
                     <tr>
                         <td><strong>AWS CloudFront</strong></td>
-                        <td>500GB transfer</td>
-                        <td>$42.50</td>
+                        <td>150GB transfer</td>
+                        <td>$12.75 (₹1,156)</td>
                     </tr>
                     <tr>
                         <td><strong>AWS DynamoDB</strong></td>
-                        <td>10GB storage, on-demand</td>
-                        <td>Free tier</td>
+                        <td>5GB storage</td>
+                        <td>FREE (within 25GB free tier)</td>
                     </tr>
                     <tr>
                         <td><strong>AWS Amplify</strong></td>
                         <td>Hosting + CI/CD</td>
-                        <td>$15</td>
+                        <td>$15 (₹1,361)</td>
                     </tr>
                     <tr>
                         <td><strong>AWS API Gateway</strong></td>
-                        <td>30K requests</td>
-                        <td>Free tier</td>
+                        <td>10K requests</td>
+                        <td>FREE (within 1M free tier)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AWS CloudWatch</strong></td>
+                        <td>Basic logs & metrics</td>
+                        <td>FREE (within free tier)</td>
                     </tr>
                     <tr class="cost-total">
-                        <td colspan="2"><strong>TOTAL (with Free Tier)</strong></td>
-                        <td>$150-240/month</td>
+                        <td colspan="2"><strong>💚 MVP TOTAL</strong></td>
+                        <td>$61-65/month (₹5,533-5,896/month)</td>
+                    </tr>
+
+                    <tr style="background: rgba(102, 126, 234, 0.2);">
+                        <td colspan="3"><strong>📈 SCALED ESTIMATE (100 Active Users)</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>AWS Bedrock</strong> (Batch mode - 50% cheaper)</td>
+                        <td>40K queries (~15M tokens)</td>
+                        <td>$60-75 (₹5,442-6,803)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AWS Textract</strong></td>
+                        <td>3K pages/month</td>
+                        <td>$4.50 (₹408)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AWS Lambda</strong></td>
+                        <td>150K invocations</td>
+                        <td>$2 (₹181)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AWS Step Functions</strong></td>
+                        <td>30K transitions</td>
+                        <td>$0.75 (₹68)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AWS EC2</strong> (Spot instances)</td>
+                        <td>50 hours rendering</td>
+                        <td>$15-25 (₹1,361-2,268)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AWS S3</strong></td>
+                        <td>100GB videos</td>
+                        <td>$2.30 (₹209)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AWS CloudFront</strong></td>
+                        <td>400GB transfer</td>
+                        <td>$34 (₹3,084)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AWS DynamoDB</strong></td>
+                        <td>10GB storage</td>
+                        <td>FREE (within free tier)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AWS Amplify</strong></td>
+                        <td>Hosting + CI/CD</td>
+                        <td>$15 (₹1,361)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AWS API Gateway</strong></td>
+                        <td>40K requests</td>
+                        <td>FREE (within free tier)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AWS CloudWatch</strong></td>
+                        <td>Standard monitoring</td>
+                        <td>FREE (within free tier)</td>
                     </tr>
                     <tr class="cost-total">
-                        <td colspan="2"><strong>TOTAL (after 12 months)</strong></td>
-                        <td>$200-280/month</td>
+                        <td colspan="2"><strong>🚀 SCALED TOTAL</strong></td>
+                        <td>$133-157/month (₹12,063-14,240/month)</td>
                     </tr>
                 </tbody>
             </table>
 
+            <div class="warning" style="margin-top: 2rem;">
+                <h3 style="margin-top: 0;">💡 Cost Optimization Strategies</h3>
+                <ul class="feature-list">
+                    <li><strong>Bedrock Batch API</strong> - 50% savings vs on-demand ($1.50/M input, $7.50/M output)
+                    </li>
+                    <li><strong>Aggressive Caching</strong> - Cache common queries, videos, OCR results (30-40%
+                        reduction)</li>
+                    <li><strong>Removed AWS Kendra</strong> - Replaced with DynamoDB semantic search (saves ~$800/month)
+                    </li>
+                    <li><strong>EC2 Spot Instances</strong> - 70% cheaper than on-demand for video rendering</li>
+                    <li><strong>Maximize Free Tier</strong> - Lambda (1M free), DynamoDB (25GB free), API Gateway (1M
+                        free)</li>
+                </ul>
+            </div>
+
             <div class="highlight">
                 <strong>🎁 Hackathon Benefit:</strong> AWS typically provides $1000+ in credits for hackathon
-                participants,
-                which covers ~4-6 months of full operation!
+                participants, which covers <strong>15+ months of MVP operation</strong> or <strong>6+ months at
+                    scale</strong>!
             </div>
         </div>
 
@@ -1050,7 +1127,7 @@
                 <div class="module-card">
                     <h3>AWS Integration</h3>
                     <ul class="feature-list">
-                        <li>12+ AWS services used</li>
+                        <li>11+ AWS services used</li>
                         <li>100% serverless agents</li>
                         <li>Auto-scaling enabled</li>
                     </ul>
